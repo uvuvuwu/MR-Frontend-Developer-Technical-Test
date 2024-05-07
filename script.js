@@ -54,8 +54,18 @@ function loadDescription() {
 
 // Load item size buttons from info returned from api call
 function loadSizeButtons() {
+    let buttonsDiv = document.getElementById("buttons");
+
     // for size options in sizeOptions
-    // Create button
-    // Add text content
-    // Add to div
+    let sizeOptions = productApi.sizeOptions;
+    for(let i = 0; i < sizeOptions.length; i++){
+        let option = sizeOptions[i].label;
+
+        // Create button
+        let button = document.createElement("button");
+        // Add text content
+        button.textContent = option;
+        // Add button to div
+        buttonsDiv.appendChild(button);
+    }
 }
