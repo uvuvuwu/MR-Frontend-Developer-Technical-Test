@@ -5,18 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MR Frontend Developer Technical Test</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 
 <body onload="loadPage()">
-    <img id="item-image">
-    <h3 id="item-title"></h3>
-    <div id="item-cost"></div>
-    <div id="item-description"></div>
+    <div class="topnav">
+        <a id="cart" href="#cart">My Cart</a>
+    </div>
 
-    <div>size</div>
-    <div id="buttons"></div>
-    <button>Add to cart</button>
+    <div class="page-body">
+        <div class="page-body-image">
+            <img id="item-image">
+        </div>
+
+        <div class="page-body-info">
+            <div class="flex-left"></div>
+            <div class="page-body-info-block">
+                <h3 id="item-title"></h3>
+                <div id="item-cost"></div>
+                <div id="item-description"></div>
+
+                <div>size</div>
+                <div id="buttons"></div>
+                <button>Add to cart</button>
+            </div>
+            <div class="flex-right"></div>
+        </div>
+    </div>
 
 </body>
 

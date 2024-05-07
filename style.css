@@ -1,0 +1,54 @@
+.topnav{
+    background-color: #F6F6F7;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.topnav a {
+    margin-right: 10px;
+}
+
+.page-body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+/* Body image */
+.page-body-image{
+    flex: 1;
+    width: 100%;
+
+    text-align: center;
+    min-width: 250px;
+    flex-grow: 1;
+}
+
+#item-image{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Body info */
+.page-body-info{
+    flex: 1;
+    width: 100%;
+    min-width: 250px;
+    flex-grow: 1;
+
+    display: flex;
+}
+
+.flex-left{
+    flex: 1;
+}
+.flex-right{
+    flex: 1;
+}
+
+.page-body-info-block{
+    max-width: 800px;
+    flex: 20;
+}
