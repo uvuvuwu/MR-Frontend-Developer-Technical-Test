@@ -7,12 +7,14 @@
     <title>MR Frontend Developer Technical Test</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 
 <body onload="loadPage()">
     <div class="topnav">
-        <a id="cart" href="#cart">My Cart</a>
+        <button id="cart" onclick="setCart()" class="btn btn-primary">My Cart</button>
     </div>
+    <div id="cart-display"></div>
 
     <div class="page-body">
         <div class="page-body-image">
@@ -24,11 +26,14 @@
             <div class="page-body-info-block">
                 <h3 id="item-title"></h3>
                 <div id="item-cost"></div>
+                <br>
                 <div id="item-description"></div>
+                <br>
 
                 <div>size</div>
                 <div id="buttons"></div>
-                <button>Add to cart</button>
+                <br>
+                <button onclick="addItemToCart()" class="btn btn-primary">Add to cart</button>
             </div>
             <div class="flex-right"></div>
         </div>
