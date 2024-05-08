@@ -87,3 +87,8 @@
 .item-info{
     flex: 3;
 }
+
+.add-to-cart:hover{
+    background-color: #19aedc !important;
+    transition: background-color .2s;
+}
